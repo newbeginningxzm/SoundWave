@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SoundWave" parent="com.android.internal.R.styleable.View">
+        <attr name="sound_orientation">
+            <enum name = "vertical" value="0"/>
+            <enum name = "horizon" value="1"/>
+        </attr>
+        <attr name="rect_width" format="dimension"/>
+        <attr name="rect_height" format="dimension"/>
+        <attr name="rect_number" format="integer|reference"/>
+        <attr name="rect_color" format="reference|color"/>
+        <attr name="baseline" format="dimension"/>
+        <attr name="frames" fromat="integer|reference"/>
+        <attr name ="rect_min_height" fromat="integer|reference"/>
+        <attr name="rect_delay" format="integer|reference"/>
+        <attr name="rect_interval" format="dimension"/>
+        <attr name="period" format="integer|reference"/>
+    </declare-styleable>
+</resources>

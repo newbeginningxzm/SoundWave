@@ -1,0 +1,32 @@
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.3'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+project.ext{
+    compile_sdk_version = COMPILE_SDK_VERSION.toInteger()
+    build_tools_version = "${BUILD_TOOLS_VERSION}"
+    target_sdk_version = TARGET_SKD_VERSION.toInteger()
+    min_sdk_version = MIN_SDK_VERSION.toInteger()
+    version_code = VERSION_CODE.toInteger()
+    version_name = "${VERSION_NAME}"
+    application_id = "${APPLICATION_ID}"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
